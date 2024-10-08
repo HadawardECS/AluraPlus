@@ -1,0 +1,189 @@
+/* Corpo e alma do projeto */
+:root {
+    --Branco-Principal: #FFFFFF;
+    --Cinza-Secundario: #C0C0C0;
+    --Botao-Azul:       #167BF7;
+    --Cor-de-Fundo:     #000000;
+    --Font-Principal:   'Inter';
+    --Botao-Efeito:     #3a8aeb;
+}
+
+body {
+    background-color:   var(--Cor-de-Fundo);
+    color:              var(--Branco-Principal);
+    font-family:        var(--Font-Principal);
+    font-size:          16px;
+    font-weight:        400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Parte 1 do projeto */
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__img {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--Botao-Azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--Branco-Principal);
+    display: block;
+    text-decoration: none;
+    margin: 1em;
+}
+
+.botao__2 {
+    background-color: transparent;
+    border: 2px solid var(--Branco-Principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--Cinza-Secundario);
+}
+
+.container__caixa {
+    margin: 0 3em;
+}
+
+/* Parte 2 do Projeto*/
+
+.secundario {
+    align-items: center;
+    margin: 0 7em;
+}
+
+.secundario__img {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 34px;
+    color: var(--Branco-Principal);
+    margin-bottom: 0.2em;
+}
+
+.descricao__texto {
+    color: var(--Cinza-Secundario);
+}
+
+/* Parte 3 do Projeto*/
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao { /* essa classe afeta a "descricao" das outras partes do projeto também */
+    padding: 1em;
+}
+
+.imgII {
+    margin-left: 3em;
+}
+
+/* Parte 4 do Projeto não tem nada em particular para mexer*/
+
+/* Parte 5 do Projeto */
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--Branco-Principal);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--Branco-Principal);
+}
+
+/* Parte 5.5 do projeto */
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__logo {
+    padding: 1em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 1em;
+}
+
+.lista__link {
+    margin: 0 0.2em;
+}
+
+.link__lista {
+    color: var(--Branco-Principal);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0.2em;
+}
+
+.rodape__texto {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--Cinza-Secundario);
+    margin: 2em;
+    padding: 0 0 3em;
+}
+
+/* Detalhes */
+
+.lista__link a:hover {
+    color: var(--Botao-Azul);
+}
+
+.lista__link a:active {
+    color: cadetblue;
+}
+
+.container__botao:hover {
+    background-color: var(--Botao-Efeito);
+    color: var(--Cor-de-Fundo);
+}
+
+.botao__2:hover {
+    background-color: var(--Cinza-Secundario);
+}
